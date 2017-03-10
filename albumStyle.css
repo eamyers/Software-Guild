@@ -1,6 +1,17 @@
-h2{
+
+
+.newfont {
 	
+	font-family: 'Diplomata SC', cursive;
+}
+
+.cdart{
+	height: 300px;
+	width: 300px;
+	background-image: url(https://images-na.ssl-images-amazon.com/images/I/41Y02PTAJ5L.jpg) ;
+	margin: 0 auto;
+}
+
+li {
 	font-style: italic;
-	font-family: Verdana;
-	
 }
