@@ -15,3 +15,24 @@
 li {
 	font-style: italic;
 }
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: underline;
+	background-color: #9DD3CC;
+}
+
+td {
+	font-style: italic;
+}
+
+tr:nth-child(odd) {
+	background-color: #FFE4B3;
+}
+tr:nth-child(even) {
+	background-color: #9DD3CC;
+}
