@@ -7,3 +7,18 @@
 	 text-align: center;
 	 background-color: #FFDB58;
 }
+h3 {
+	font-size: 20px;
+}
+
+.menu {
+	background-color: #FFFACD;
+}
+
+tr > td {
+	font-weight: bold;
+}
+
+span {
+	font-weight: normal;
+}
