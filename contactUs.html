@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><title> Lab - Contact Us Form </title></head>
+
+<body>
+
+<form action="#" method="POST">
+  <table >
+    <tr> 
+	  <td style="text-align: right; padding: 5px 10px">First Name: </td>
+	  <td><input type="text" name="fName"/></td>
+	</tr>
+    <tr>  
+	  <td style="text-align: right; padding: 5px 10px">Last Name:</td>
+	  <td><input type="text" name="lName"/><td/>
+	</tr>
+	<tr>
+      <td style="text-align: right; padding: 5px 10px">Email: </td>
+	  <td><input type="text" name="email"/></td>
+    </tr>
+    <tr>
+	  <td style="text-align: right; padding: 5px 10px">Type of License: </td>
+	  <td><input type="radio" name="license" value="bus"/> Business <input type="radio" name="license" value="pers"/> Personal </td>
+	</tr>
+	<tr>
+	  <td style="text-align: right; padding: 5px 10px"> Reason: </td>
+	  <td> 
+	    <select name="reason">
+	      <option value="select">Select a Reason</option>
+		  <option value="software">Software Support</option>
+		  <option value="hardware">Hardware Support</option>
+		  <option value="info">Information Request</option>
+	    </select> 
+	  </td>
+    <tr>	
+	  <td style="text-align: right; padding: 5px 10px"> Additional Information: </td>
+	  <td> <textarea name="addl"></textarea></td>
+	</tr>
+    <tr>
+      <td></td>
+      <td> <input type="checkbox" name="agree" value="yes"/> I have read the terms of service.</td>	  
+	</tr>
+	<tr>
+	  <td></td>
+	  <td> <input type="submit"/></td>
+	</tr>
+  </table>
+  	
+	
+</form>
