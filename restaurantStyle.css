@@ -22,3 +22,35 @@ tr > td {
 span {
 	font-weight: normal;
 }
+
+
+a:active { 
+text-decoration: none;
+}
+a:visited {
+	color: #F3558E;
+}
+
+a:hover {
+	font-weight: bold;
+}
+#title {
+	
+	text-decoration: underline;
+}
+
+
+.bev {
+
+	font-family: arial;
+	width: 100%;
+	text-align: left;
+	height: 200px;
+	background-color: lightgrey;
+}
+
+
+
+
+
+
