@@ -1,30 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head><title>Home Page</title>
+<style>
+h2 {
+text-align: center;
+}
+.item img {
+margin: 0 auto;
+}
+
+</style>
 <link href="restaurantStyle.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
 </head>
 <div class="container-fluid">
 <body style="background-color:  #ffe6e6" >
 
 <div class="header ">
-  <h1 style="text-align: center"> Lizz's Lizard Lounge</h1>
-
+  <div class="jumbotron">
+    <h1> Lizz's Lizard Lounge</h1>
+  </div>
   <hr/>
- <ul class="nav nav-tabs"> 
+  <ul class="nav nav-tabs"> 
     <li class="active"><a href="restaurantSiteHome.html"><i class="glyphicon glyphicon-home"></i></a></li>
 	<li><a href="restaurantSiteMenu.html">Menu</a></li>
 	<li><a href="restaurantSiteContactUs.html">Contact Us </a> </li>
  </ul>
-  <hr/>
+ <hr/>
+</div>
+<noscript>
+<h3> This site is best viewed with javaScript enabled</h3>
+</noscript>
+<!--- CAROUSEL  ------------------------------------->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" 
+	class="active> </li>
+	<li data-target="#myCarousel" data-slide-to="1"></li>
+	<li data-target="#myCarousel" data-slide-to="2"></li> 
+  </ol>
   
-</div>
-<div class="jumbotron">
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+	  <img src="http://images.mid-day.com/images/2016/mar/lizard.jpg" alt="proud lizard" width="50%">
+	    <div class="carousel-caption">
+		  <h2> We're opening a new location!</h3>
+		  <p>Come to our grand opening - Lott, TX </p>
+		</div>
+	</div>
+    <div class="item">
+	<img src="http://www.freakingnews.com/pictures/35500/Lizard-Eating-a-Frog--35869.jpg" alt="lizard eating a new frog" width="50%">
+	  <div class="carousel-caption">
+	    <h2>Menu updates!</h3>
+		  <p> We're rolling out our seasonal menu, with special options for this season.</p>
+		</div>
+	  </div>
+	  <div class="item">
+	    <img src="https://s-media-cache-ak0.pinimg.com/564x/e0/cd/a4/e0cda41d3d8dd4e484a6fc335814205e.jpg" alt="lizard lapping water" width="50%">
+		  <div class="carousel-caption">
+		    <h2>Drinks on!</h3>
+			<p> The Drink of the Month is SG Special Brew</p>
+	    </div>
+	  </div>
+	</div>
+	
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+  </div>
+ </div>
  
-  <h1>Grand opening in Lott, TX!</h1> 
-</div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 <div class="main" style="width: 50%; margin:0 auto; font-family: arial">
    <p>Please visit us!<br/>
      Lizz's Lizard Lounge kicked off the ground on March 10th, 2017. This is the day after her fiance's birthday and she had the day off of work so she thought, what the heck, I'll open a psychadelic lizard restaurant. That same day she went out and aquired the friendliest and most colorful lizards across the globe as a way to bring cheer and comfort to her customers while they stuff their faces.These friendly little guys will sit upon their shoulders their entire stay and by the end of the night they shall be the best of friends to the lounge's guests. </p>
@@ -35,6 +98,10 @@
   <p> 315-555-5555</p>
 </div>   
 <hr/>   
- </div>
+
+
+  
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
 </html>
