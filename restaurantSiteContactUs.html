@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head><title>Home Page</title></head>
+<head><title>Home Page</title>
 <link href="restaurantStyle.css" rel="stylesheet" type="text/css">
-
-<style>
-.contact {
-line-height: 35px;
-margin: 5px 200px;
-}
-</style>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
 <body>
+<div class="container-fluid">
 <div class="header">
   <h1 style="text-align: center"> Lizz's Lizard Lounge</h1>
   <hr/>
-  <nav> 
-    <a href="restaurantSiteHome.html">Home</a> &ensp; <a href="restaurantSiteMenu.html">Menu</a> &ensp;  <a href="restaurantSiteContactUs.html">Contact Us </a> 
-  </nav>
+  <ul class="nav nav-tabs"> 
+    <li><a href="restaurantSiteHome.html"><i class="glyphicon glyphicon-home"></i></a></li>
+	<li><a href="restaurantSiteMenu.html">Menu</a></li>
+	<li class="active"><a href="restaurantSiteContactUs.html">Contact Us </a> </li>
+ </ul>
   <hr/>
 </div>
 <div class="contact"> 
-<form action="#" method="POST">
-  <table >
+<table class="contact table table-responsive">
+  <form action="#" method="POST">
+
+    <tr> 
+	  
+	  <td class="col-sm-3">  Name: </td>
+	  <td class="col-sm-3">  <input type="text" name="name"/></td>
+	</tr>
+    <tr>  
+	  
+	  <td class="col-sm-3"> Email:</td>
+	  <td class="col-sm-3"> <input type="text" name="email"/></td>
+	  
+	</tr>
+	<tr>
+	  
+      <td class="col-sm-3"> Phone: </td>
+	  <td class="col-sm-3"> <input type="text" name="phone"/></td>
+    </tr>
+    <tr>
+	  
+	  <td class="col-sm-3"> Reason for Inquiry:</td>
+	  <td class="col-sm-3"> 
+	    <select style="font-weight: normal">
+          <option value="catering">Catering</option>
+          <option value="priv">Private Party</option>
+		  <option value="fback">Feedback</option>
+		  <option value="other">Other</option>
+		</select>   
+	  </td>
+	</tr>
+	<tr>
+	 
+	  <td class="col-sm-3">  Have you been to the restaurant? </td>
+	  <td class="col-sm-3">  <span><input type="radio" name="ans" value="no"/>No <input type="radio" name="ans" value="yes"/> Yes</span></td>
+	</tr>
+    <tr>	
+	  
+	  <td class="col-sm-3">  Best days to contact you:</td>
+	  <td class="col-sm-3"> <span> <input type="checkbox" name="day" value="mon"/>M <input type="checkbox" name="day" value="tues"/> T <input type="checkbox" name="day" value="Wed"/>W <input type="checkbox" name="day" value="Thur"/>Th <input type="checkbox" name="day" value="Fri"/>F </span></td>
+	</tr>
+	<tr>
+	
+	  <td class="col-sm-3"> </td>
+	  <td class="col-sm-3">  <input type="submit" value="Send Request" /></td>
+	</tr>
+</form>
+</table>
+</div>
+
+<hr/>   
+ <div class="footer">
+  <p> 6767 Llama Lane, Lenordsville, KY 77177</p>
+  <p> 315-555-5555</p>
+  <hr/>
+</div> 
+</div>
+<!-- <table class="contact table-responsive">
     <tr> 
 	  <td style="text-align: right; padding: 5px 10px">  Name: </td>
 	  <td> <input type="text" name="name"/></td>
@@ -34,9 +90,9 @@ margin: 5px 200px;
 	  <td><input type="text" name="phone"/></td>
     </tr>
     <tr>
-	  <td style="text-align: right; padding: 5px 10px">Reason for Inquiry:</td>
+	  <td style="text-align: right; padding: 0px 10px">Reason for Inquiry:</td>
 	  <td> 
-	    <select>
+	    <select style="font-weight: normal">
           <option value="catering">Catering</option>
           <option value="priv">Private Party</option>
 		  <option value="fback">Feedback</option>
@@ -55,14 +111,6 @@ margin: 5px 200px;
 	  <td></td>
 	  <td style="text-align: right"> <input type="submit" value="Send Request" /></td>
 	</tr>
-  </table>
-</form>
-</div>
-<hr/>   
- <div class="footer">
-  <p> 6767 Llama Lane, Lenordsville, KY 77177</p>
-  <p> 315-555-5555</p>
-  <hr/>
-</div>  
+  </table> -->
 </body>
 </html>

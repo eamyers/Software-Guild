@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><title>Menu</title></head>
+<head><title>Menu</title>
 <style>
 .menu {
 text-align: center;
@@ -8,91 +8,95 @@ font-family: "Comic Sans MS";
 }
 </style>
 <link href="restaurantStyle.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
 <body>
+<div class="container-fluid">
 <div class="header">
   <h1 style="text-align: center"> Lizz's Lizard Lounge</h1>
   <hr/>
-  <nav> 
-    <a href="restaurantSiteHome.html">Home</a> &ensp; <a href="restaurantSiteMenu.html">Menu</a> &ensp;  <a href="restaurantSiteContactUs.html">Contact Us </a> 
-  </nav>
+  <ul class="nav nav-tabs"> 
+    <li><a href="restaurantSiteHome.html"><i class="glyphicon glyphicon-home"></i></a></li>
+	<li class="active"><a href="restaurantSiteMenu.html">Menu</a></li>
+	<li><a href="restaurantSiteContactUs.html">Contact Us </a> </li>
+ </ul>
   <hr/>
 </div>
 <div class="menu">
-  <table>
-    <tr>
-	  <td> 
+    <div class="row">
+	  <div class="col-sm-4"> 
 	    <h3>Burger and Flies </h3>
 		<p>An American Classic!<br/>
 		Your choice - w/ or w/out flies. Pickle, onion, lettuce, tomato. Served with our famous fried flies.<br/>
 		$7.95</p>
-	  </td>
-	  <td>
+	  </div>
+	  <div class="col-sm-4"> 
 	    <h3>Hot Dogs and Chirps</h3>
 		<p>A Summer Classic!<br/>
 		Your choice - white or spicy bun. Relish, mustard, ketchup served with bottled lizard chirps.<br/>
 		$7.95</p>
-	  </td>
-	  <td>
+	  </div>
+	  <div class="col-sm-4"> 
 	    <h3>Italian Sausage and Lizard-Pops</h3>
 		<p>An All-Time Favorite!<br/>
 		Your choice - red or blue lizard-pops. Cole slaw. Served with italian sausage.<br/>
 		$10.95</p>
-	  </td>
-	</tr>
-	<tr>
-	  <td>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-sm-4">
 	    <h3>Tenderloin Sandwich and Chirps</h3>
 		<p>Really Hits the Spot!<br/>
 		Plain or sesame seed bun. Pickled onions, tomato seeds and lettuce. Served with bottled lizard chirps.<br/>
 		$8.95</p>
-	  </td>
-	  <td>
+	  </div>
+	  <div class="col-sm-4">
 	    <h3>House Salad</h3>
 		<p> This ones on the house!<br/>
 		Your choice, free or $10 donation. Cheese, pepper-poppers, big tunas. Served with lizard toenails.<br/>
 		FREE</p>
-	  </td>
-	  <td>
+	  </div>
+	  <div class="col-sm-4">
 	    <h3>Biscuit Sandwich and Flies</h3>
 		<p>Lizz's favorite!</br>
 		A smoked biscuit inside a biscut on top of a thick cut biscuit. Cole slaw. Served with our famous fried flies.<br/>
 		$7.95</p>
-	  </td>
-	</tr>
-</table>
+	  </div>
+	</div>
 </div>
-<div >
-  <table class="bev">
-   
+<table class="table table-striped table-responsive " >
+  <thead>
 	  <tr>
-	    <td id="title">Beverages</td>
-	    <td> </td>
-	  </th>
+	    <th>Beverages</th>
+	</thead>
+	<tbody>
    	  <tr>
-        <td>Root Beer</td>
-	    <td>$3.00</td>
+        <td class="col-sm-4">Root Beer</td>
+	    <td class="col-sm-2">$3.00</td>
        </tr>
 	   <tr>
-         <td>Bottled Water</td>
-	     <td>$1.25</td>
-	   </tr>
-	     <tr>
-         <td>Lemonade</td>
-	     <td>$1.00</d>
+         <td class="col-sm-4">Bottled Water</td>
+	     <td class="col-sm-2">$1.25</td>
 	   </tr>
 	   <tr>
-         <td>Iced Tea</td>
-	     <td>$1.25</td>
+         <td class="col-sm-4">Lemonade</td>
+	     <td class="col-sm-2">$1.00</td>
 	   </tr>
-	  
-  </table>
-</div>
+	   <tr >
+         <td class="col-sm-4">Iced Tea</td>
+	     <td class="col-sm-2">$1.25</td>
+	   </tr>
+  </tbody>
+ </table>
+
 <hr/>
 <div class="footer">
   <p> 6767 Llama Lane, Lenordsville, KY 77177</p>
   <p> 315-555-5555</p>
 </div>   
 <hr/>   
- 
+ </div>
 </body>
 </html>
